@@ -34,7 +34,6 @@
 </div>
 </body>
 <footer>
-    <p>📧 tyler@yourdomain.com</p>
-    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    <p>📬 pac.tylerj@gmail.com</p>
 </footer>
 </html>

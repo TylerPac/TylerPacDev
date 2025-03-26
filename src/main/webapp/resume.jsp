@@ -78,4 +78,7 @@
     </ul>
 </div>
 </body>
+<footer>
+    <p>📬 pac.tylerj@gmail.com</p>
+</footer>
 </html>

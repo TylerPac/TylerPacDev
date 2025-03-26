@@ -38,7 +38,27 @@ h1, h2 {
     color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
-
+@media (max-width: 500px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #8b0000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+footer p {
+    margin: 0;
+}
 .navbar h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -74,7 +94,20 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+li span.status {
+    text-align: center;
+    min-width: 100px; /* makes the column even */
+}
 
+.status.done {
+    color: green;
+    font-weight: bold;
+}
+
+.status.pending {
+    color: orange;
+    font-weight: bold;
+}
 .actions button {
     margin-left: 5px;
     background-color: #007bff;

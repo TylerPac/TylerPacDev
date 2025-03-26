@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ToDoServlet extends HttpServlet {
     private static final SessionFactory factory = new Configuration()
-            .configure()
+            .configure("hibernate_ToDo.cfg.xml")
             .addAnnotatedClass(ToDoList.class)
             .buildSessionFactory();
 
