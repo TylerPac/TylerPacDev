@@ -3,11 +3,33 @@ body {
     background: #f4f6f8;
     color: #333;
     margin: 0;
+    overflow-x: hidden;
 }
 header {
     background-color: #4a90e2;
     color: white;
     padding: 2rem 1rem;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .container {
     max-width: 800px;
@@ -49,12 +71,13 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 1000;
-    background-color: #8b0000;
     color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
     border-top-right-radius: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+    background: #8b0000;
 }
 footer p {
     margin: 0;
@@ -227,4 +250,33 @@ input[type="text"] {
 
 .view-button:hover {
     background-color: #a40000;
+}
+.swiper-container {
+    padding: 1rem 0;
+    width: 100%;
+}
+.swiper-wrapper {
+    align-items: center; /* Align slides vertically */
+}
+.swiper-slide {
+    height: auto;        /* Let the slide height match the content */
+    padding: 0;          /* Remove padding */
+    width: auto;
+    margin: 0 20px; /* horizontal spacing only */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.2);
 }

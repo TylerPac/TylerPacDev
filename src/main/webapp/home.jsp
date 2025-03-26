@@ -3,7 +3,10 @@
 <head>
     <title>Tyler Pac's Site</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <body>
 <div class="navbar">
     <h1>Tyler Pac Development</h1>
@@ -33,6 +36,65 @@
     </p>
 </div>
 </body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/MyToDoList.jpg" alt="ToDoList" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/BattlePass.png" alt="BattlePass" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/WeaponMastery.png" alt="WeaponMastery" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/MyToDoList.jpg" alt="ToDoList" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/BattlePass.png" alt="BattlePass" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="${pageContext.request.contextPath}/Projects.jsp">
+                <img src="images/WeaponMastery.png" alt="WeaponMastery" />
+            </a>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1.2, // mobile-friendly default
+        spaceBetween: 12,   // less space for mobile
+        centeredSlides: true, // looks smoother on mobile
+        breakpoints: {
+            480: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+</script>
 <footer>
     <p>📬 pac.tylerj@gmail.com</p>
 </footer>
